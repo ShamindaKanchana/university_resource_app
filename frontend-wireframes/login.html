@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>University Resource Portal — Login</title>
+  <style>
+    body { background: #f6f8fb; font-family: Inter, Arial, sans-serif; margin: 0; }
+    .centered { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .login-card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 24px rgba(33,53,71,0.08);
+      padding: 2.5rem 2rem 2rem 2rem;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .login-card h2 { margin: 0 0 10px 0; font-size: 1.45rem; font-weight: 700; color: #667eea; }
+    .login-card p { color: #6c757d; margin-bottom: 1.5rem; font-size: 1rem; }
+    .form-group { margin-bottom: 1.2rem; }
+    label { display: block; margin-bottom: 6px; color: #495057; font-size: 0.98rem; }
+    input[type="text"], input[type="password"] {
+      width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #dee2e6;
+      font-size: 1rem; transition: border .2s; background: #f8f9fa;
+    }
+    input:focus { border-color: #667eea; outline: none; }
+    .row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .remember { display: flex; align-items: center; gap: 5px; font-size: 0.97rem; }
+    .btn {
+      width: 100%; padding: 11px; border: none; border-radius: 8px; font-size: 1.08rem;
+      font-weight: 600; background: linear-gradient(90deg, #667eea, #764ba2); color: #fff; cursor: pointer;
+      transition: background .2s;
+    }
+    .btn:hover { background: #667eea; }
+    .footer { margin-top: 2rem; text-align: center; color: #6c757d; font-size: 0.97rem; }
+  </style>
+</head>
+<body>
+  <div class="centered">
+    <form class="login-card" autocomplete="off">
+      <h2>University Resource Portal</h2>
+      <p>Sign in to access and share resources</p>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" autocomplete="username" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required />
+      </div>
+      <div class="row">
+        <label class="remember"><input type="checkbox" id="remember_me" /> Remember me</label>
+        <a href="#" style="color:#667eea; font-size:0.96rem;">Forgot?</a>
+      </div>
+      <button class="btn" type="submit">Login</button>
+      <div class="footer">Don't have an account? Contact administrator.</div>
+    </form>
+  </div>
+</body>
+</html>
